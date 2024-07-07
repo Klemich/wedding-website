@@ -18,7 +18,7 @@ $(document).ready(function() {
       autostart: false
     });
     console.log("Date has already passed!")
-    
+
   } else {
     // Run countdown timer
     clock = $(".clock").FlipClock(diff, {
@@ -30,12 +30,12 @@ $(document).ready(function() {
         }
       }
     });
-    
+
     // Check when timer reaches 0, then stop at 0
     setTimeout(function() {
       checktime();
     }, 1000);
-    
+
     function checktime() {
       t = clock.getTime();
       if (t <= 0) {
